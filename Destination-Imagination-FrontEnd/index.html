@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destination Imagination demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="basicInfo.js"></script>
+<script src="buttonFeatures.js"></script>
+<script src="attendees.js"></script>
+<script src="forms.js"></script>
+
+<body>
+    <div class="background">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <a class="navbar-brand mb-0 h1" href="#">
+                <img src="DestinationImaginationLogo.svg" alt="Destination Imagination Logo" class="logo">
+            </a>
+            <a class="navbar-brand mb-0 h1" href="#">
+                <h4 id="Globals">Global Finals 2024</h4>
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" id="dropdown-tabs" class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item">Feature</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="dropdown-tabs" class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Officials</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item"> Feature </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="dropdown-tabs" class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Teams</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item"> Feature </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" id="dropdown-tabs" class="nav-link">Reports</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="dropdown-tabs" class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item"> Feature </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="dropdown-tabs" class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item"> Feature </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="body">
+                <button onclick=buttonColor() class="body-button" id="basic-info">Basic Info</button>
+                <button onclick=buttonColor() class="body-button" id="attendees">Attendees</button>
+                <button onclick=buttonColor() class="body-button" id="contacts">Contacts</button>
+                <button onclick=buttonColor() class="body-button" id="check-in">Check-In</button>
+                <button onclick=buttonColor() class="body-button" id="requests">Requests</button>
+                <button onclick=buttonColor() class="body-button" id="payment">Payment</button>
+                <button onclick=buttonColor() class="body-button" id="forms">Forms</button>
+                <button onclick=buttonColor() class="body-button" id="housing-food">Housing & Food</button>
+                <button onclick=buttonColor() class="body-button" id="register">Register</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="basic-info-features" id="basic-info-features">
+                    <div class="body-header">
+                        <h1 class="header">Team Registration: (127-36892) 7 Kids and a TM/What's The First Rule of DI?
+                        </h1>
+                        <div class="border"></div>
+                    </div>
+                    <div class="team-info">
+                        <h1 class="team-info-font"><strong>Organization: </strong>7 Kids and a TM</h1>
+                        <h1 class="team-info-font"><strong>Team Name: </strong>What's The First Rule of DI?</h1>
+                        <h1 class="team-info-font"><strong>From: </strong>Morganton</h1>
+                        <h1 class="team-info-font"><strong>Team Challenge: </strong>In Motion</h1>
+                        <h1 class="team-info-font"><strong>Team Level: </strong>Secondary</h1>
+                        <h1 class="team-info-font" id="native-language"><strong>Native Language: </strong>English</h1>
+                        <button class="edit-button" onclick=basicInfoText()>Edit</button>
+                    </div>
+                    <div class="border"></div>
+                    <div class="terms">
+                        <h5 id="important-terms"><strong>Important Terms</strong></h5>
+                        <div class="check">
+                            <input type="checkbox">
+                            <p class="conditions">I have read and understood the guidelines for creating pins that are
+                                in compliance
+                                with copyright and trademark laws. anyone trading pins that may infringe on intellectual
+                                property may be asked to put them away.
+                                <link>Click Here</link> to read the guidelines.
+                            </p>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <p class="conditions">I have read and understood the cancellations and refunds policy for
+                                Global finals.
+                                <link>Click Here
+                                to read the policy.
+                            </p>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <p class="conditions">By checking this box, you acknowledge that Destination Imagination,
+                                Inc., will not refund any amounts
+                                paid to attend Global Finals 2024 for any reason, including exclusion from the Event for
+                                failure to
+                                follow protocols. Destination Imagination, Inc., will not reimburse any expenses
+                                incurred by any attendee
+                                relating to COVID-19 testing, isolation or quarantining. (For more information on
+                                cancelation, please
+                                <link>Click Here)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-section" id="attendees-features" style="display: none;">
+                    <div class="body-header">
+                        <h1 class="header">Team Registration: (127-36892) 7 Kids and a TM/What's The First Rule of DI?
+                        </h1>
+                        <div class="border"></div>
+                    </div>
+                    <div>
+                        <h1 class="computer-header">Please check the boxes for TMs, participants, and any spectators
+                            that are attending Global Finals.</h1>
+                        <h1 class="mobile-header">Please click the names of the TMs, participants, and any spectators,
+                            and check the box to confirm that they are attending Global Finals.</h1>
+                    </div>
+                    <div class="team-managers">
+                        <h1 class="team-manager-heading"><u>Team Manager(s)</u></h1>
+                        <div class="overflow">
+                            <div class="container text-center overflow-auto" id="tm-computer">
+                                <div class="row flex-nowrap">
+                                    <div class="col">Name</div>
+                                    <div class="col">Attending?</div>
+                                    <div class="col">Teams</div>
+                                    <div class="col">Pronouns</div>
+                                    <div class="col">First Year of DI?</div>
+                                    <div class="col">First GF?</div>
+                                    <div class="col">DI Alum?</div>
+                                    <div class="col">Taken TM Courses?</div>
+                                </div>
+                                <div id="attendees-border" class="border"></div>
+                                <div class="row flex-nowrap" id="tm-selects">
+                                    <div class="col" id="manager">Michael McQuaid</div>
+                                    <div class="col"><input type="checkbox" class="attendee-check"></div>
+                                    <div class="col" id="teams">1</div>
+                                    <div class="col" id="pronouns">he/him</div>
+                                    <div class="col">Yes</div>
+                                    <div class="col">Yes</div>
+                                    <div class="col">Yes</div>
+                                    <div class="col">Yes</div>
+                                </div>
+                            </div>
+                            <div class="mobile-tm">
+                                <h5 class="mobile-tm-name">Name</h5>
+                                <div class="mobile-tm-row">
+                                    <button class="mobile-managers" data-bs-toggle="modal" data-bs-target="#tmModal">
+                                        <span>Michael McQuaid</span> <span>&#8594;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal" id="tmModal" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Michael McQuaid</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container text-center overflow-auto" id="tm-modal">
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Attending?</div>
+                                                    <div class="col"><input type="checkbox" class="attendee-check">
+                                                    </div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Teams:</div>
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Pronouns:</div>
+                                                    <div class="col">he/him</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">First Year of DI?</div>
+                                                    <div class="col">Yes</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manager-buttons">
+                            <button onclick=addManager() class="add-manager-button" id="add-manager">Add</button>
+                            <button onclick=editManager() class="edit-manager-button" id="edit-manager">Edit</button>
+                        </div>
+
+                    </div>
+                    <div class="participants">
+                        <h1 class="team-manager-heading"><u>Participants</u></h1>
+                        <div class="overflow">
+                            <div class="container text-center overflow-auto" id="participants-computer">
+                                <div class="row flex-nowrap">
+                                    <div class="col">Name</div>
+                                    <div class="col">Attending?</div>
+                                    <div class="col">Pronouns</div>
+                                    <div class="col">Age on 04/17/2024</div>
+                                    <div class="col">First Year of DI?</div>
+                                    <div class="col">First GF?</div>
+                                </div>
+                                <div id="participants-border" class="border"></div>
+                                <div class="row flex-nowrap" id="tm-selects">
+                                    <div class="col">Cache Hickman</div>
+                                    <div class="col"><input type="checkbox" class="attendee-check"></div>
+                                    <div class="col">he/him</div>
+                                    <div class="col">17</div>
+                                    <div class="col">Yes</div>
+                                    <div class="col">Yes</div>
+                                </div>
+                            </div>
+                            <div class="mobile-tm">
+                                <h5 class="mobile-tm-name">Name</h5>
+                                <div class="mobile-tm-row" id="participants-modal">
+                                    <button class="mobile-managers" data-bs-toggle="modal"
+                                        data-bs-target="#participantModal">
+                                        <span>Cache Hickman</span> <span>&#8594;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal" id="participantModal" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Cache Hickman</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container text-center overflow-auto" id="tm-modal">
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Attending?</div>
+                                                    <div class="col"><input type="checkbox" class="attendee-check">
+                                                    </div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Pronouns:</div>
+                                                    <div class="col" id="input-column">he/him</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">First Year of DI?</div>
+                                                    <div class="col" id="input-column">Yes</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Age on 04/17/2024</div>
+                                                    <div class="col" id="input-column">17</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">First GF?</div>
+                                                    <div class="col" id="input-column">Yes</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" id="edit-button-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"
+                                                onclick=editModal()>Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manager-buttons">
+                            <button class="add-manager-button" onclick=addModal() id="add-participant">Add</button>
+                            <button class="edit-manager-button" id="edit-participant">Edit</button>
+                        </div>
+                    </div>
+                    <div class="spectators">
+                        <h1 class="team-manager-heading"><u>Spectators</u></h1>
+                        <div class="overflow">
+                            <div class="container text-center overflow-auto" id="spectators-computer">
+                                <div class="row flex-nowrap">
+                                    <div class="col">Name</div>
+                                    <div class="col">Attending?</div>
+                                    <div class="col">Pronouns</div>
+                                    <div class="col">Age on 04/12/2024</div>
+                                </div>
+                                <div id="spectators-border" class="border"></div>
+                                <div class="row flex-nowrap" id="spectators-answers">
+                                    <div class="col">Elizabeth McQuaid</div>
+                                    <div class="col"><input type="checkbox" class="attendee-check"></div>
+                                    <div class="col">he/him</div>
+                                    <div class="col">17</div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                            <div class="mobile-tm">
+                                <h5 class="mobile-tm-name">Name</h5>
+                                <div class="mobile-tm-row">
+                                    <button class="mobile-managers" data-bs-toggle="modal"
+                                        data-bs-target="#spectatorsModal">
+                                        <span>Elizabeth Mcquaid</span> <span>&#8594;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal" id="spectatorsModal" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Elizabeth McQuaid</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container text-center overflow-auto" id="tm-modal">
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Attending?</div>
+                                                    <div class="col"><input type="checkbox" class="attendee-check">
+                                                    </div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Pronouns:</div>
+                                                    <div class="col">he/him</div>
+                                                </div>
+                                                <div class="row flex-nowrap">
+                                                    <div class="col">Age on 04/12/2024</div>
+                                                    <div class="col">17</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manager-buttons">
+                            <button class="add-manager-button" id="add-spectator">Add</button>
+                            <button class="edit-manager-button" id="edit-spectator">Edit</button>
+                        </div>
+                    </div>
+                    <div class="page-button">
+                        <button class="page" id="tm-page" onclick=teamManagerPage()>Team Managers</button>
+                        <button class="page" id="p-page" onclick=participantsPage()>Participants</button>
+                        <button class="page" id="s-page" onclick=spectatorsPage()>Spectators</button>
+                    </div>
+                </div>
+                <div class="features-section" id="forms-features" style="display: none;">
+                    <div class="body-header">
+                        <h1 class="header">Team Registration: (127-36892) 7 Kids and a TM/What's The First Rule of DI?
+                        </h1>
+                        <div class="border"></div>
+                    </div>
+                    <h5 class="forms-description">In order to participate in GF24, all attendees must sign the digital
+                        consent forms.
+                        Please instruct
+                        anyone who has not signed to complete the forms. You can enter/change each attendee's emails by
+                        typing
+                        in the boxes below.
+                    </h5>
+                    <div class="forms-team-managers">
+                        <h5 class="forms-team-manager-heading"><u>Team Manager(s)</u></h5>
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    Name
+                                </div>
+                                <div class="col">
+                                    Email Address
+                                </div>
+                                <div class="col">
+                                    Form Status
+                                </div>
+                            </div>
+                            <div id="forms-border" class="border"></div>
+                            <div class="row">
+                                <div class="col">
+                                    Michael McQuaid
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="forms-input" value="mmcquaid@wearencdi.com">
+                                </div>
+                                <div class="col">
+                                    <h5 class="signed">Signed &#9989</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forms-participants">
+                        <h5 class="forms-team-manager-heading"><u>Participants</u></h5>
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    Name
+                                </div>
+                                <div class="col">
+                                    Email Address
+                                </div>
+                                <div class="col">
+                                    Form Status
+                                </div>
+                            </div>
+                            <div id="forms-border" class="border"></div>
+                            <div class="row">
+                                <div class="col">
+                                    Cache Hickman
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="forms-input" value="cautumnturner@gmail.com">
+                                </div>
+                                <div class="col">
+                                    <h5 class="signed">Signed &#9989</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forms-spectators">
+                        <h5 class="forms-team-manager-heading"><u>Spectators</u></h5>
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    Name
+                                </div>
+                                <div class="col">
+                                    Email Address
+                                </div>
+                                <div class="col">
+                                    Form Status
+                                </div>
+                            </div>
+                            <div id="forms-border" class="border"></div>
+                            <div class="row">
+                                <div class="col">
+                                    Elizabeth McQuaid
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="forms-input">
+                                </div>
+                                <div class="col">
+                                    <h5 class="signed">Signed &#9989</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    Eshaan Garg
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="forms-input">
+                                </div>
+                                <div class="col">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" id="forms-dropdown"
+                                            type="button" aria-expanded="false">
+                                            <u>Not Signed</u> &#10060
+                                        </button>
+                                        <ul class="dropdown-menu" id="forms-dropdown-menu">
+                                            <li><a class="dropdown-item" id="forms-dropdown-item" href="#">
+                                                    <i class="fas fa-copy"></i> Copy Link
+                                                </a></li>
+                                            <li><a class="dropdown-item" id="forms-dropdown-item" href="#">
+                                                    <i class="fas fa-envelope"></i> Send Email
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="form" id="tm-form" onclick=teamManagerForm()>Team Managers</button>
+                        <button class="form" id="p-form" onclick=participantsForm()>Participants</button>
+                        <button class="form" id="s-form" onclick=spectatorsForm()>Spectators</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

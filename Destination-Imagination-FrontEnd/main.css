@@ -1,0 +1,816 @@
+.background {
+    background: linear-gradient(180deg, #d4c3ff, #c1adf4);
+    height: 1000px;
+    max-height: 1200px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.logo {
+    max-width: 300px;
+    margin-left: 30px;
+    cursor: auto;
+}
+
+#Globals {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+#dropdown-tabs {
+    color: rgba(255, 255, 255, 0.883);
+    font-weight: 500;
+}
+
+#dropdown-tabs:hover {
+    color: white;
+}
+
+.body {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 15px;
+}
+
+.body-button {
+    max-width: 180px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #222529;
+    color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, background-color 0.3s, transform .2s ease;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+}
+
+
+.basic-info-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    height: 750px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: rgb(6, 6, 6);
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    word-wrap: break-word;
+}
+
+.team-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-info-font {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.team-info-select {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.team-info-select-options {
+    width: 125px;
+    margin-top: -5px;
+}
+
+.team-input {
+    border-radius: 5px;
+    border: solid black 1px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.edit-button {
+    border-radius: 5px;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(133, 131, 131);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.add-manager-button,
+.edit-manager-button {
+    border-radius: 5px;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(133, 131, 131);
+    background-color: #EFEFEF;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+}
+
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.check input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+}
+
+#important-terms {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.team-manager-heading {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.features-section {
+    position: relative;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    width: 1200px;
+    height: 750px;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .features-section {
+        max-width: 900px;
+    }
+}
+
+.team-manager {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.form-select-md {
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.tm-row:first-of-type {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.team-managers {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.col>select {
+    width: 80px;
+}
+
+#add-spectator, #edit-spectator, #edit-participant, #add-participant {
+    pointer-events: none;
+    opacity: 0.5; 
+}
+
+.overflow {
+    overflow-x: auto;
+}
+
+.manager-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.page-button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+}
+
+.page {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    color: rgb(133, 131, 131);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    background-color: #EFEFEF;
+    cursor: pointer;
+}
+
+#tm-page {
+    color: black;
+    background-color: #b1b1b1;
+}
+
+#p-page,
+#s-page {
+    color: rgb(133, 131, 131);
+    background-color: #EFEFEF;
+}
+
+.participants {
+    padding: 10px;
+    display: none;
+}
+
+.spectators {
+    padding: 10px;
+    display: none;
+}
+
+.forms-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forms-team-manager-heading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#forms-border {
+    margin-top: 20px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.forms-team-managers {
+    display: block;
+}
+
+.forms-participants {
+    display: none;
+}
+
+.forms-spectators {
+    display: none;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+}
+
+.mobile-tm {
+    display: none
+}
+
+.form {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    color: rgb(133, 131, 131);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    background-color: #EFEFEF;
+    cursor: pointer;
+}
+
+#tm-form {
+    color: black;
+    background-color: #b1b1b1;
+}
+
+#p-form,
+#s-form {
+    color: rgb(133, 131, 131);
+    background-color: #EFEFEF;
+}
+
+.signed {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.forms-input {
+    margin-top: -10px;
+}
+
+#attendees-border,
+#participants-border,
+#spectators-border {
+    margin-top: 10px;
+}
+
+#language {
+    margin-top: -30px;
+    margin-left: 160px;
+}
+
+#select-margin {
+    margin-left: 10px;
+}
+
+.computer-header {
+    display: block;
+    display: flex;
+    justify-content: center;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    word-wrap: break-word;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: center;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    word-wrap: break-word;
+    font-size: clamp(16px, 2vw, 20px);
+    display: none;
+}
+
+#forms-dropdown {
+    color: black;
+    background-color: white;
+    border: none;
+    margin-top: -5px;
+}
+
+#tm-computer {
+    display: block;
+}
+
+#spectators-answers {
+    margin-left: 90px;
+    gap: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms-spectators .dropdown-menu#forms-dropdown-menu {
+    margin-left: 80px;
+    width: auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+
+.dropdown-toggle::after {
+    transition: transform 0.3s ease;
+}
+
+.body-button:hover {
+    transform: scale(1.2)
+}
+
+.edit-button:hover,
+.page:hover {
+    color: black;
+    background-color: #b1b1b1;
+}
+
+
+.add-manager-button:hover,
+.edit-manager-button:hover {
+    color: black;
+    background-color: #b1b1b1;
+}
+
+.add-manager-button:active,
+.edit-manager-button:active,
+.page:active {
+    background-color: rgba(168, 166, 166, 0.753);
+}
+
+@media screen and (max-width: 1100px) {
+    .terms {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 7px;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-left: 0px;
+    }
+
+    #Globals {
+        font-size: 14px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .forms-participants {
+        display: block;
+    }
+
+    .body {
+        flex-direction: row;
+        margin-top: 12px;
+        overflow-x: auto;
+        padding: 10px;
+    }
+
+    .body-button {
+        min-width: 60px;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 40px;
+        border-radius: 10px;
+        text-align: center;
+        border: none;
+        font-size: 12px;
+    }
+
+    .basic-info-features {
+        margin-left: 0px;
+        max-width: 400px;
+        max-height: 700px;
+    }
+
+    .header {
+        text-align: center;
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .team-info {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .team-info-font {
+        font-size: 15px;
+    }
+
+    .team-info-select {
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .team-info-select-options {
+        width: 100px;
+        margin-top: -5px;
+    }
+
+    #add-manager {
+        pointer-events: none;
+        opacity: 0.5; 
+    }
+
+    #important-terms {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .terms {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 7px;
+        overflow-y: auto;
+    }
+
+    .check {
+        margin-top: -10px;
+        gap: 10px;
+    }
+
+    .check input[type="checkbox"] {
+        margin-left: -5px;
+    }
+
+    .features-section {
+        justify-content: center;
+        margin-left: 0px;
+        max-width: 400px;
+        max-height: 700px;
+    }
+
+    .forms-description {
+        font-size: 13px;
+    }
+
+    #add-participant {
+        pointer-events:all;
+        opacity: 1; 
+    }
+
+    .form,
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 15px;
+        width: 80px;
+        height: 50px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .team-manager-heading,
+    .forms-team-manager-heading {
+        font-size: 15px;
+    }
+
+    .signed {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+
+    .forms-input {
+        max-width: 100px;
+        margin-top: -10px;
+    }
+
+    .forms-spectators .dropdown-menu#forms-dropdown-menu {
+        margin-left: 0px;
+        width: 100px;
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    #forms-dropdown {
+        font-size: 13px;
+        margin-left: -20px;
+    }
+
+    #forms-dropdown-item {
+        font-size: 12px;
+    }
+
+    .forms-spectators .dropdown-menu#forms-dropdown-menu {
+        margin-left: 0px;
+        width: auto;
+    }
+
+    .mobile-tm {
+        display: block;
+        padding: 10px;
+    }
+
+    .mobile-tm-name {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .mobile-managers {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: none;
+        border-radius: 10px;
+        font-size: inherit;
+        cursor: pointer;
+        box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.05);
+        height: 45px;
+        align-items: center;
+    }
+
+    #tm-modal {
+        padding-bottom: 45px;
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: block;
+    }
+
+    #tm-row-1>h5 {
+        font-size: 13px;
+    }
+
+    #tm-response-row>h5,
+    #tm-response-row>h1 {
+        font-size: 13px;
+    }
+
+
+    #edit-manager, #edit-spectator, #edit-participant {
+        display: none;
+    }
+
+    #mobile-border {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tm-row-participants {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        gap: 110px;
+        padding-right: 30px;
+        padding-left: 50px;
+        margin-left: 50px;
+    }
+
+    .tm-row-spectators {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .tm-row-participants h1,
+    .tm-row-participants input,
+    .tm-row-participants h5,
+    .tm-row-spectators h1,
+    .tm-row-spectators input,
+    .tm-row-spectators h5 {
+        width: 150%;
+        text-align: center;
+        font-size: 135px;
+    }
+
+    .computer-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    .tm-row-participants select {
+        width: 500%;
+    }
+
+    .col {
+        min-width: 100px;
+    }
+
+    #attendees-border {
+        margin-top: 10px;
+        width: 800px;
+    }
+
+    #tm-computer {
+        display: none;
+    }
+
+    #participants-computer {
+        display: none
+    }
+
+    #spectators-computer {
+        display: none
+    }
+
+    .forms-participants {
+        display: none;
+    }
+
+    #participants-border {
+        width: 580px;
+    }
+
+    #spectators-border {
+        width: 380px;
+    }
+
+    .col select {
+        width: 60px;
+        font-size: 12px;
+    }
+}
+
+@media (hover: none) {
+
+    .edit-button:hover,
+    .page:hover {
+        background-color: #EFEFEF;
+        color: rgb(133, 131, 131);
+    }
+
+    .add-manager-button:hover {
+        background-color: #EFEFEF;
+        color: rgb(133, 131, 131);
+    }
+}
